@@ -197,12 +197,11 @@ body {
 }
 
 
-/* about us  */
+/* ABOUT US  */
 
 .about-us {
     background-color: rgb(232, 232, 223);
-    max-height: 1700px;
-
+    height: 100%;
 }
 
 .about-us__info {
@@ -249,9 +248,102 @@ body {
 
 .about-us__picture {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     border-radius: 3px;
     display: block;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .about-us__gallery-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info,
+    .hero__picture,
+    .about-us {
+        min-width: 320px;
+    }
+}
+
+
+/* BOOKING  */
+
+
+.hero__picture {
+    width: 100vw;
+    height: 700px;
+    object-fit: cover;
+    position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.booking__date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    font-size: 24px;
+    gap: 15px;
+    background-color: #e7e7e7;
+}
+
+.booking__coming,
+.booking__leaving {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.booking__calendar {
+    border: 1 solid gray;
+    padding: 14px;
+    border-radius: 3px;
+    margin-top: 7px;
+}
+
+.booking__search-btn {
+    border: 1 solid rgb(144, 144, 144);
+    margin-top: 30px;
+    padding: 11px 27px;
+    font-size: 22px;
+    background-color: rgb(177, 177, 129);
+    border-radius: 3px;
+    color: white;
+}
+
+.booking__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form__input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.booking__info {
+    padding: 13px;
+    border-radius: 7px;
+    margin-top: 7px;
+}
+
