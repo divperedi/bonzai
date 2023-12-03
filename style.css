@@ -260,6 +260,34 @@ body {
     cursor: pointer;
 }
 
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .about-us__gallery-list {
         grid-template-columns: 1fr;
@@ -359,6 +387,10 @@ body {
 
 .booking__room-picture {
     border-radius: 7px;
+}
+
+.booking__room-picture:hover {
+    box-shadow: 5px 3px 5px 1px rgb(163, 163, 163);
 }
 
 .booking__room-description {
