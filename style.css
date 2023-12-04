@@ -47,7 +47,7 @@ body {
 }
 
 .header__menu-link:hover {
-    color: #415427;
+    color: rgb(104, 158, 104);
 }
 
 .header__menu-link:active {
@@ -141,6 +141,16 @@ body {
     backdrop-filter: blur(30px);
     color: #ddd9d9;
     cursor: pointer;
+}
+
+.main__btn-item:hover {
+    background-color: #b0ae66;
+    box-shadow: 3px 3px 16px 3px rgb(120, 120, 120), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main__btn-item:active {
+    background-color: rgb(88, 145, 88);
+    transform: translateY(5px);
 }
 
 .main__btn-link {
@@ -376,6 +386,16 @@ body {
     cursor: pointer;
 }
 
+.booking__search-btn:hover {
+    background-color: #c1c081;
+    box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.booking__search-btn:active {
+    background-color: rgb(104, 158, 104);
+    transform: translateY(5px);
+}
+
 .booking__room-choice {
     width: auto;
 }
@@ -411,6 +431,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .booking__room-text {
@@ -431,6 +452,16 @@ body {
     color: white;
     cursor: pointer;
     border: 1 solid rgb(144, 144, 144);
+}
+
+.booking__room-btn:hover {
+    background-color: #c1c081;
+    box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.booking__room-btn:active {
+    background-color: rgb(104, 158, 104);
+    transform: translateY(7px);
 }
 
 .booking__form {
@@ -464,7 +495,7 @@ body {
 }
 
 .booking__form-btn {
-    background-color: rgb(130, 130, 42);
+    background-color: rgb(112, 184, 112);
     padding: 15px 30px;
     border-radius: 7px;
     color: white;
@@ -473,6 +504,15 @@ body {
     margin: 20px;
     font-size: 24px;
     cursor: pointer;
+}
+
+.booking__form-btn:hover {
+    box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.booking__form-btn:active {
+    background-color: rgb(104, 158, 104);
+    transform: translateY(5px);
 }
 
 @media screen and (max-width: 600px) {
