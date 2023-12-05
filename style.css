@@ -565,11 +565,12 @@ body {
     .booking__form {
         grid-template-columns: 1fr;
         margin-top: 100px;
-        max-width: 455px;
+        max-width: 350px;
         min-width: 320px;
+        font-size: 20px;
     }
 
-    .form__input-group {
+    .booking__form-input-group {
         padding: 20px;
     }
 
@@ -590,7 +591,174 @@ body {
         width: 300px;
     }
 
-    .booking__room-picture-name {
+    .booking__room-picture-name,
+    .booking__room-price {
         text-align: center;
+    }
+}
+
+/* RESTAURANT */
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.restaurant__divider {
+    height: 70px;
+    font-size: 36px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 19px;
+}
+.restaurant__slide {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: restaurant__slide 30s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(assets/rest1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes restaurant__slide {
+    0% {
+        background-image: url(assets/rest1.jpg);
+    }
+
+    25% {
+        background-image: url(assets/rest2.jpg);
+    }
+
+    50% {
+        background-image: url(assets/rest3.jpg);
+    }
+
+    75% {
+        background-image: url(assets/rest4.jpg);
+    }
+
+    100% {
+        background-image: url(assets/rest5.jpg);
+    }
+}
+
+.restaurant__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(254, 254, 254);
+    border-radius: 7px;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 700px;
+    height: auto;
+    padding: 50px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    
+}
+
+.restaurant__meal-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.restaurant__meal {
+    margin: 20px;
+}
+
+.restaurant__form-input-group {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.restaurant__info {
+    padding: 13px;
+    border-radius: 7px;
+    margin-top: 7px;
+    width: 250px;
+}
+
+.restaurant__form-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.restaurant__form-btn {
+    background-color: rgb(112, 184, 112);
+    padding: 15px 30px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    width: 150px;
+    margin: 27px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.restaurant__form-btn:hover {
+    box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.restaurant__form-btn:active {
+    background-color: rgb(104, 158, 104);
+    transform: translateY(5px);
+} 
+
+@media screen and (max-width: 600px) {
+    .restaurant__slide {
+        min-width: 320px;
+        height: 1000px;
+    }
+    .restaurant__divider,
+    .restaurant {
+        min-width: 320px;
+        height: auto;
+        font-size: 26px;
+    }
+
+    .restaurant__meal-choice {
+        min-width: 320px;
+        height: auto;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .restaurant__form {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        min-width: 320px;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .restaurant__form-input-group {
+        padding: 20px;
+    }
+
+    .restaurant__info {
+        padding-right: 10px;
+    }
+
+    .restaurant__form-btn-wrapper {
+        justify-content: center;
+    }
+    .restaurant__form-btn {
+        width: 250px;
+        
     }
 }

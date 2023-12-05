@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <header class="header">
+        <aside class="header__logo">
+            <a href="index.html" class="header__logo-link">
+                <img src="assets/bonz.ai-logo-white-landscape.png" height=50px alt="bonzai logo" class="header__icon">
+            </a>
+        </aside>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__list-item">
+                    <a href="about-us.html" class="header__menu-link">Om oss</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="booking.html" class="header__menu-link">Boende</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="restaurant.html" class="header__menu-link">Restaurang</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+        <p class="info__text">Check-in hours: 12.00-14.00</p>
+        <p class="info__text">Check-out hours: 10.00-12.00</p>
+        <p class="info__text">We are cash-free and animal-friendly!</p>
+    </section>
+    <section class="hero">
+        <section class="hero-text">
+            <h1 class="hero__title" style="font-size:50px">Få en eko upplevelse</h1>
+            <p class="hero__description">Skapa oförglömliga minnen</p>
+        </section>
+    </section>
+    <main class="restaurant">
+        <p class="restaurant__divider">Boka matupplevelse för:
+            <form class="restaurant__meal-choice" action="/action_page.php">
+                <section class="restaurant__meal">
+                    <input class="restaurant__radio-btn" type="radio" id="breakfast" name="meal" value="Breakfast">
+                    <label for="breakfast">Breakfast</label>
+                </section>
+                <section class="restaurant__meal">
+                    <input class="restaurant__radio-btn" type="radio" id="lunch" name="meal" value="Lunch">
+                    <label for="lunch">Lunch</label>
+                </section>
+                    <section class="restaurant__meal">
+                    <input class="restaurant__radio-btn" type="radio" id="brunch" name="meal" value="Brunch">
+                    <label for="brunch">Brunch</label>
+                </section>
+                    <section class="restaurant__meal">
+                    <input class="restaurant__radio-btn" type="radio" id="dinner" name="meal" value="Dinner">
+                    <label for="dinner">Dinner</label>
+                </section>
+            </form>
+        </p>
+        <section class="restaurant__slide">
+            <section class="restaurant__form">
+                <section class="restaurant__form-input-group">
+                    <label for="fName">Förnamn:</label>
+                    <input class="restaurant__info" type="text" id="fName" placeholder="Your name">
+                </section>
+                <section class="restaurant__form-input-group">
+                    <label for="lName">Efternamn:</label>
+                    <input class="restaurant__info" type="text" id="lName" placeholder="Your surname">
+                </section>
+                <section class="restaurant__form-input-group">
+                    <label for="email">Mailadress:</label>
+                    <input class="restaurant__info" type="email" id="email" placeholder="Your e-mail">
+                </section>
+                <section class="restaurant__form-input-group">
+                    <label for="phone">Mobiltelefonnummer:</label>
+                    <input class="restaurant__info" type="phone" id="phone" placeholder="Your phone number">
+                </section>
+                <section class="restaurant__form-input-group">
+                    <label for="adult">Vuxna:</label>
+                    <input class="restaurant__info" type="number" id="adult" inputmode="numeric" name="total_adults"
+                        placeholder="2" min="1" max="10" required>
+                </section>
+                <section class="restaurant__form-input-group">
+                    <label for="kid">Barn:</label>
+                    <input class="restaurant__info" type="number" id="kid" inputmode="numeric" name="total_kids"
+                        placeholder="2" min="0" max="10" required>
+                </section>
+                <span></span>
+                <section class="restaurant__form-btn-wrapper">
+                    <button class="restaurant__form-btn">Boka</button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-container">
+            <article class="footer__address">
+                <h2 class="footer__address-heading">Address</h2>
+                <p class="footer__address-text">Sveagatan 33</p>
+                <p class="footer__address-text">777 69 IKEA</p>
+            </article>
+            <article class="footer__media">
+                <h2 class="footer__media-heading">Social media</h2>
+                <figure class="footer__media-list">
+                    <a class="footer__media-link" href=""><img clas="footer__media-icon" src="assets/twitter.png"
+                            alt="twitter" height="30px"></a>
+                    <a class="footer__media-link" href=""><img clas="footer__media-icon" src="assets/facebook.png"
+                            alt="facebook" height="30px"></a>
+                    <a class="footer__media-link" href=""><img clas="footer__media-icon" src="assets/instagram.png"
+                            alt="instagram" height="30px"></a>
+                </figure>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
