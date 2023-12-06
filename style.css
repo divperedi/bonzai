@@ -18,7 +18,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color:#acb5d5; */
     background-color: rgb(182, 182, 162);
     height: auto;
     padding: 30px;
@@ -135,7 +134,7 @@ body {
     padding: 20px 25px;
     width: 170px;
     border-radius: 11px;
-    border: 1 solid rgb(240, 239, 239);
+    border: 1px solid rgb(240, 239, 239);
     font-size: 23px;
     background: transparent;
     backdrop-filter: blur(30px);
@@ -205,7 +204,7 @@ body {
     }
 
     .main__btn-item {
-        font-size: 14px;
+        font-size: 16px;
         height: 70px;
     }
 
@@ -218,25 +217,29 @@ body {
 
 /* ABOUT US  */
 
+.divider {
+    height: 70px;
+    font-size: 36px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 19px;
+}
+
 .about-us {
     background-color: rgb(232, 232, 223);
     height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-us__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    max-width: 1100px;
+    align-items: center;
     text-align: left;
     padding: 50px;
-}
-
-.about-us__info-title {
-    font-size: 42px;
-    padding-bottom: 40px;
-    padding-top: 30px;
+    width: 70%;
 }
 
 .about-us__info-description {
@@ -244,31 +247,57 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.about-us__gallery-title {
-    font-size: 42px;
-    padding-left: 50px;
-}
-
-.about-us__gallery-list {
+.about-us__gallery-slide {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: about-us__gallery-slide 110s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(assets/1.jpg);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    overflow-x: scroll;
-    scrollbar-color: orange;
-    scrollbar-width: thin;
-    width: 100vw;
-    height: auto;
-    padding: 50px;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
+@keyframes about-us__gallery-slide {
+    0% {
+        background-image: url(assets/1.jpg);
+    }
 
-.about-us__gallery-picture {
-    width: 500px;
-    height: 700px;
-    object-fit: cover;
-    border-radius: 3px;
-    display: block;
+    12.5% {
+        background-image: url(assets/2.jpg);
+    }
+
+    25% {
+        background-image: url(assets/3.jpg);
+    }
+
+    37.5% {
+        background-image: url(assets/4.jpg);
+    }
+
+    50% {
+        background-image: url(assets/5.jpg);
+    }
+
+    62.5% {
+        background-image: url(assets/6.jpg);
+    }
+
+    75% {
+        background-image: url(assets/7.jpg);
+    }
+
+    87.5% {
+        background-image: url(assets/8.jpg);
+    }
+
+    100% {
+        background-image: url(assets/9.jpg);
+    }
 }
 
 @keyframes display {
@@ -308,6 +337,24 @@ body {
     .hero__picture,
     .about-us {
         min-width: 320px;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us__info-description {
+        text-align: center;
+    }
+
+    .divider {
+        min-width: 320px;
+        height: auto;
+        font-size: 26px;
+    }
+
+    .about-us__info {
+        width: 100%;
     }
 }
 
@@ -368,7 +415,7 @@ body {
 }
 
 .booking__calendar {
-    border: 1 solid gray;
+    border: 1px solid gray;
     padding: 14px;
     border-radius: 3px;
     margin-top: 7px;
@@ -376,7 +423,7 @@ body {
 }
 
 .booking__search-btn {
-    border: 1 solid rgb(144, 144, 144);
+    border: 1px solid rgb(144, 144, 144);
     margin-top: 30px;
     padding: 11px 27px;
     font-size: 22px;
@@ -451,7 +498,7 @@ body {
     background-color: rgb(177, 177, 129);
     color: white;
     cursor: pointer;
-    border: 1 solid rgb(144, 144, 144);
+    border: 1px solid rgb(144, 144, 144);
 }
 
 .booking__room-btn:hover {
@@ -566,7 +613,7 @@ body {
         grid-template-columns: 1fr;
         margin-top: 100px;
         max-width: 350px;
-        min-width: 320px;
+        min-width: 340px;
         font-size: 20px;
     }
 
@@ -613,6 +660,7 @@ body {
     background-color: #f0f0f0;
     padding: 19px;
 }
+
 .restaurant__slide {
     width: 100%;
     height: 100vh;
@@ -663,7 +711,7 @@ body {
     padding: 50px;
     background: transparent;
     backdrop-filter: blur(10px);
-    
+
 }
 
 .restaurant__meal-choice {
@@ -717,13 +765,14 @@ body {
 .restaurant__form-btn:active {
     background-color: rgb(104, 158, 104);
     transform: translateY(5px);
-} 
+}
 
 @media screen and (max-width: 600px) {
     .restaurant__slide {
         min-width: 320px;
         height: 1000px;
     }
+
     .restaurant__divider,
     .restaurant {
         min-width: 320px;
@@ -757,8 +806,9 @@ body {
     .restaurant__form-btn-wrapper {
         justify-content: center;
     }
+
     .restaurant__form-btn {
         width: 250px;
-        
+
     }
 }
