@@ -728,9 +728,6 @@ body {
 }
 
 .restaurant__form-input-group {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
     padding: 20px;
 }
 
@@ -804,11 +801,10 @@ body {
     }
 
     .restaurant__form-btn-wrapper {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .restaurant__form-btn {
-        width: 250px;
-
+        width: 235px;
     }
 }
