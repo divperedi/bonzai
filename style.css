@@ -242,7 +242,7 @@ body {
     width: 70%;
 }
 
-.about-us__info-description {
+.about-us__description {
     font-size: 24px;
     font-family: 'Didact Gothic', sans-serif;
 }
@@ -371,7 +371,7 @@ body {
     position: relative;
 }
 
-.hero-text {
+.hero__text {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -443,17 +443,17 @@ body {
     transform: translateY(5px);
 }
 
-.booking__room-choice {
+.booking__rooms {
     width: auto;
 }
 
-.booking__room-title {
+.booking__title {
     font-size: 36px;
     padding-left: 50px;
     padding-top: 70px;
 }
 
-.booking__room-cards {
+.booking__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
@@ -461,27 +461,27 @@ body {
     padding: 50px;
 }
 
-.booking__room-card {
+.booking__card-item {
     font-size: 26px;
     padding-bottom: 120px;
 }
 
-.booking__room-picture {
+.booking__picture {
     border-radius: 7px;
 }
 
-.booking__room-picture:hover {
+.booking__picture:hover {
     box-shadow: 5px 3px 5px 1px rgb(163, 163, 163);
 }
 
-.booking__room-description {
+.booking__description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.booking__room-text {
+.booking__text {
     text-align: left;
     font-size: 22px;
     width: 500px;
@@ -489,7 +489,7 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.booking__room-btn {
+.booking__btn {
     padding: 10px 65px;
     margin: 15px;
     margin-bottom: 0;
@@ -501,12 +501,12 @@ body {
     border: 1px solid rgb(144, 144, 144);
 }
 
-.booking__room-btn:hover {
+.booking__btn:hover {
     background-color: #c1c081;
     box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.booking__room-btn:active {
+.booking__btn:active {
     background-color: rgb(104, 158, 104);
     transform: translateY(7px);
 }
@@ -523,7 +523,7 @@ body {
     height: auto;
 }
 
-.booking__form-input-group {
+.booking__input-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,12 +536,12 @@ body {
     margin-top: 7px;
 }
 
-.booking__form-btn-wrapper {
+.booking__btn-wrapper {
     display: flex;
     justify-content: flex-end;
 }
 
-.booking__form-btn {
+.booking__book-btn {
     background-color: rgb(112, 184, 112);
     padding: 15px 30px;
     border-radius: 7px;
@@ -553,32 +553,32 @@ body {
     cursor: pointer;
 }
 
-.booking__form-btn:hover {
+.booking__book-btn:hover {
     box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.booking__form-btn:active {
+.booking__book-btn:active {
     background-color: rgb(104, 158, 104);
     transform: translateY(5px);
 }
 
 @media screen and (max-width: 600px) {
-    .booking__room-cards {
+    .booking__cards {
         grid-template-columns: 1fr;
         gap: 130px;
     }
 
     .booking,
     .booking__date,
-    .booking__room-card,
-    .booking__room-text,
-    .booking__room-description,
+    .booking__card-item,
+    .booking__text,
+    .booking__description,
     .booking__form,
-    .form__input-group {
+    .booking__input-group {
         min-width: 320px;
     }
 
-    .booking__room-description {
+    .booking__description {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -593,17 +593,17 @@ body {
         margin-top: 7px;
     }
 
-    .booking__room-title {
+    .booking__title {
         padding-left: 50px;
     }
 
-    .booking__room-text {
+    .booking__text {
         width: 320px;
         text-align: center;
 
     }
 
-    .booking__room-btn {
+    .booking__btn {
         left: 0;
         bottom: -70px;
         width: 300px;
@@ -617,7 +617,7 @@ body {
         font-size: 20px;
     }
 
-    .booking__form-input-group {
+    .booking__input-group {
         padding: 20px;
     }
 
@@ -625,21 +625,21 @@ body {
         padding-right: 10px;
     }
 
-    .booking__room-picture {
+    .booking__picture {
         min-width: 300px;
     }
 
-    .booking__form-btn-wrapper {
+    .booking__btn-wrapper {
         justify-content: center;
         align-self: center;
     }
 
-    .booking__form-btn {
+    .booking__book-btn {
         width: 300px;
     }
 
-    .booking__room-picture-name,
-    .booking__room-price {
+    .booking__picture-name,
+    .booking__price {
         text-align: center;
     }
 }
@@ -714,7 +714,7 @@ body {
 
 }
 
-.restaurant__meal-choice {
+.restaurant__meals {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -727,7 +727,7 @@ body {
     margin: 20px;
 }
 
-.restaurant__form-input-group {
+.restaurant__input-group {
     padding: 20px;
 }
 
@@ -738,12 +738,12 @@ body {
     width: 250px;
 }
 
-.restaurant__form-btn-wrapper {
+.restaurant__btn-wrapper {
     display: flex;
     justify-content: flex-end;
 }
 
-.restaurant__form-btn {
+.restaurant__book-btn {
     background-color: rgb(112, 184, 112);
     padding: 15px 30px;
     border-radius: 7px;
@@ -755,11 +755,11 @@ body {
     cursor: pointer;
 }
 
-.restaurant__form-btn:hover {
+.restaurant__book-btn:hover {
     box-shadow: 0 12px 16px 0 rgb(217, 217, 217), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.restaurant__form-btn:active {
+.restaurant__book-btn:active {
     background-color: rgb(104, 158, 104);
     transform: translateY(5px);
 }
@@ -777,7 +777,7 @@ body {
         font-size: 26px;
     }
 
-    .restaurant__meal-choice {
+    .restaurant__meals {
         min-width: 320px;
         height: auto;
         flex-direction: column;
@@ -792,7 +792,7 @@ body {
         font-size: 20px;
     }
 
-    .restaurant__form-input-group {
+    .restaurant__input-group {
         padding: 20px;
     }
 
@@ -800,11 +800,11 @@ body {
         padding-right: 10px;
     }
 
-    .restaurant__form-btn-wrapper {
+    .restaurant__btn-wrapper {
         justify-content: flex-start;
     }
 
-    .restaurant__form-btn {
+    .restaurant__book-btn {
         width: 235px;
     }
 }

@@ -35,14 +35,14 @@
         <p class="info__text">Vi är kontantfria och djurvänliga!</p>
     </section>
     <section class="hero">
-        <section class="hero-text">
+        <section class="hero__text">
             <h1 class="hero__title" style="font-size:50px">Få en eko upplevelse</h1>
             <p class="hero__description">Skapa oförglömliga minnen</p>
         </section>
     </section>
     <p class="restaurant__divider">Boka matupplevelse för:</p>
     <main class="restaurant">
-            <form class="restaurant__meal-choice" action="/action_page.php">
+            <form class="restaurant__meals" action="/action_page.php">
                 <section class="restaurant__meal">
                     <input class="restaurant__radio-btn" type="radio" id="breakfast" name="meal" value="Breakfast">
                     <label for="breakfast">Frukost</label>
@@ -62,35 +62,35 @@
             </form>
         <section class="restaurant__slide">
             <section class="restaurant__form">
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="fName">Förnamn:</label>
                     <input class="restaurant__info" type="text" id="fName" placeholder="Ditt förnamn">
                 </section>
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="lName">Efternamn:</label>
                     <input class="restaurant__info" type="text" id="lName" placeholder="Ditt efternamn">
                 </section>
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="email">Mailadress:</label>
                     <input class="restaurant__info" type="email" id="email" placeholder="Din e-mail">
                 </section>
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="phone">Telefonnummer:</label>
                     <input class="restaurant__info" type="number" id="phone" placeholder="Din telefonnummer">
                 </section>
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="adult">Vuxna:</label>
                     <input class="restaurant__info" type="number" id="adult" inputmode="numeric" name="total_adults"
                         placeholder="2" min="1" max="10" required>
                 </section>
-                <section class="restaurant__form-input-group">
+                <section class="restaurant__input-group">
                     <label for="kid">Barn:</label>
                     <input class="restaurant__info" type="number" id="kid" inputmode="numeric" name="total_kids"
                         placeholder="2" min="0" max="10" required>
                 </section>
                 <span></span>
-                <section class="restaurant__form-btn-wrapper">
-                    <button class="restaurant__form-btn">Boka</button>
+                <section class="restaurant__btn-wrapper">
+                    <button class="restaurant__book-btn">Boka</button>
                 </section>
             </section>
         </section>
